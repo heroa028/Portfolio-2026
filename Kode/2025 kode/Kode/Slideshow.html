@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+     <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Bilder/Logo_Henry_portfolio1.svg">
+</head>
+
+</head>
+
+<body>
+
+     <!--Her er navbaren, med divene; Fulle navbaren, linkene, og fargeendreren-->
+    <header>
+        <nav class="NavbarSlide">
+          <a href="index.html">
+            <img class="Logo1" src="Bilder/Logo_Henry_portfolio1.svg" alt="">
+            </a>
+            <nav class="Navbar2">
+                <a href="index.html">Hjem</a>
+                <a href="Om_Meg.html">Om Meg</a>
+                <a href="Kontakt_Meg.html">Kontakt Meg</a>
+                <a href="Prosjekter.html">Prosjekter</a>
+            </nav>
+            <img class="FargeGreie" src="Bilder/FargePalett.png" alt="">
+        </nav>
+    </header>
+
+
+    <!--Slideshow laget av AI-->
+  <div class="my-slideshow">
+  <div class="my-slides">
+    <img src="Bilder/PingMeR1.png" class="active">
+    <img src="Bilder/PingMeG1.png">
+    <img src="Bilder/PingMeS1.png">
+  </div>
+
+  <button class="my-prev">&#10094;</button>
+  <button class="my-next">&#10095;</button>
+</div>
+
+<!-- Fullscreen Lightbox -->
+<div class="my-lightbox" id="myLightbox">
+  <span class="my-close">&times;</span>
+  <img id="myLightboxImg">
+  <button class="my-lightbox-prev">&#10094;</button>
+  <button class="my-lightbox-next">&#10095;</button>
+</div>
+
+
+<script>
+  const slides = document.querySelectorAll('.my-slideshow img');
+  const prev = document.querySelector('.my-prev');
+  const next = document.querySelector('.my-next');
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[i].classList.add('active');
+  }
+
+  prev.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  });
+
+  next.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  });
+
+  /* LIGHTBOX */
+  const lightbox = document.getElementById('myLightbox');
+  const lightboxImg = document.getElementById('myLightboxImg');
+  const closeBtn = document.querySelector('.my-close');
+  const lbPrev = document.querySelector('.my-lightbox-prev');
+  const lbNext = document.querySelector('.my-lightbox-next');
+
+  slides.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      index = i;
+      openLightbox();
+    });
+  });
+
+  function openLightbox() {
+    lightbox.style.display = "flex";
+    lightboxImg.src = slides[index].src;
+  }
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+
+  lbPrev.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    openLightbox();
+  });
+
+  lbNext.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    openLightbox();
+  });
+</script>
+
+</body>
+ <!-- ✅ SCRIPTET SOM BYTTER ROSA/LILLA TIL GRØNT -->
+    <!--Dette er laget av AI-->
+    <script>
+        const knapp = document.querySelector(".FargeGreie");
+        let greenMode = false;
+
+        knapp.addEventListener("click", () => {
+            if (!greenMode) {
+                document.documentElement.style.setProperty("--rosa", "#6aff8d");
+                document.documentElement.style.setProperty("--lilla", "#1f7a3a");
+            } else {
+                document.documentElement.style.setProperty("--rosa", "#BF67B1");
+                document.documentElement.style.setProperty("--lilla", "#902A7F");
+            }
+
+            greenMode = !greenMode;
+        });
+    </script>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefølje Henry</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Bilder/Logo_Henry_portfolio1.svg">
+</head>
+
+
+<body>
+    <!--Her er navbaren, med divene; Fulle navbaren, linkene, og fargeendreren-->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="Logo1" src="Bilder/Logo_Henry_portfolio1.svg" alt="">
+            </a>
+            <nav class="Navbar2">
+                <a href="index.html">Hjem</a>
+                <a href="Om_Meg.html">Om Meg</a>
+                <a href="Kontakt_Meg.html">Kontakt Meg</a>
+                <a href="Prosjekter.html">Prosjekter</a>
+            </nav>
+            <img class="FargeGreie" src="Bilder/FargePalett.png" alt="">
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="BilderP">
+
+            <!--LEGGE TIL LACROSSE HER-->
+            <a href="../../Uke_38_LacrosseOslo/index.html">
+                <img src="Bilder/Oslo_Lacrosse.png" alt="Bilde av Oslo_Lacrosse prosjektet mitt. ">
+            </a>
+
+            <a href="Slideshow.html">
+
+                <img src="Bilder/PingMe3.png" alt="">
+            </a>
+
+            <a href="StorBilde.html">
+
+                <img src="Bilder/1IMI-HenryR-Sigger_i_potte.jpg" alt="">
+
+            </a>
+
+
+        </section>
+
+
+
+    </main>
+
+
+</body>
+<!-- ✅ SCRIPTET SOM BYTTER ROSA/LILLA TIL GRØNT -->
+<!--Dette er laget av AI-->
+<script>
+    const knapp = document.querySelector(".FargeGreie");
+    let greenMode = false;
+
+    knapp.addEventListener("click", () => {
+        if (!greenMode) {
+            document.documentElement.style.setProperty("--rosa", "#6aff8d");
+            document.documentElement.style.setProperty("--lilla", "#1f7a3a");
+        } else {
+            document.documentElement.style.setProperty("--rosa", "#BF67B1");
+            document.documentElement.style.setProperty("--lilla", "#902A7F");
+        }
+
+        greenMode = !greenMode;
+    });
+</script>
+
+</html>

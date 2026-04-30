@@ -1,0 +1,259 @@
+/* Dette er logoen øverst i venstre hjørne, med riktig bakgrunnsfarge og padding på sidene også fjernet gappet på toppen med margin top 0*/
+.logo {
+    background-color: #94BEE6;
+    height: 60px;
+    margin-top: 0;
+    display: flex;
+}
+
+/* fikser alle gaps på sidene*/
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/* Dette er for at */
+.LogoT {
+    background-color: #94BEE6;
+    height: 60px;
+    padding: 10px;
+    margin-top: 0;
+    display: flex;
+    align-self: center;
+    margin-right: 118px;
+}
+
+/* dette er for å få OSLO LACROSSE til å være i midten av navbaren på x aksen*/
+.Navlog {
+    display: flex;
+    justify-content: space-between;
+    background-color: #94BEE6;
+}
+
+h1 {
+    font-size: 250%;
+    margin-top: 0;
+}
+
+.Body1 {
+    background-image: url("img/goaliefocus.jpg");
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Para1Menu {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Para1Menu div {
+    background-color: rgba(255, 254, 254, 0.7);
+    border-radius: 20px;
+    padding: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #94BEE6;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 200%;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.dropLogo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-self: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Calibri';
+}
+
+.dropdown-content a:hover {
+    background-color: #94BEE6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropLogo:hover {
+    background-color: #72ace2;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+.Para2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 230%;
+    padding: 80px;
+    
+}
+
+.Para2 p {
+    border-right: solid;
+    width: 150%;
+}
+
+h2 {
+    font-family: century-gothic, sans-serif;
+    font-size: 500%;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.Para3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+}
+
+.Para23 {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 250%;
+}
+
+p {
+    font-family: "Calibri";
+}
+
+h1 {
+    font-family: century-gothic, sans-serif;
+}
+
+h4 {
+    font-family: century-gothic, sans-serif;
+    font-size: 400%;
+    margin: 0%;
+    margin-left: 5%;
+}
+
+.Imgnr12 img {
+    width: 50%;
+    border-radius: 30px
+}
+
+h5 {
+    font-size: 400%;
+    font-family: century-gothic, sans-serif;
+}
+
+.Header2 {
+    display: flex;
+    gap: 25%;
+}
+
+.Bottombar {
+    background-color: #94BEE6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+h6 {
+    font-size: 400%;
+    font-family: century-gothic, sans-serif;
+}
+
+.Tekst2 {
+    width: 50%; 
+    margin: 20px;
+}
+
+.InfoFor {
+    border-bottom: solid;
+    display: flex;
+    justify-self: center;
+}
+
+.Termin1 {
+    font-size: 230%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    border-right: solid;
+    width: 145%;
+}
+
+.linksh {
+    font-size: 130%;
+    border-top: solid;
+}
+
+.Tren {
+    font-size: 150%;
+}
+
+.Body67 {
+    display: flex;
+}
+
+.Kval {
+    padding-left: 20px;
+    font-size: 230%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Kval2 {
+    font-size: 150%;
+}
+
+.ImA img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+.Galleri h6 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+h6 {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
