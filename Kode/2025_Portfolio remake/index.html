@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefølje Henry</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Bilder/Logo_2026_1.svg">
+</head>
+
+
+<body>
+    <!--Her er navbaren, med divene; Fulle navbaren, linkene, og fargeendreren-->
+    <header>
+        <nav>
+           <a href="index.html">
+            <img class="Logo1" src="Bilder/Logo_2026_1.svg" alt="">
+            </a>
+            <nav class="Navbar2">
+    <a href="index.html">Hjem</a>
+    <a href="Om_Meg.html">Om Meg</a>
+    <a href="Kontakt_Meg.html">Kontakt Meg</a>
+    <div class="dropdown">
+        <a href="Prosjekter.html" class="dropdown-toggle">Prosjekter ▾</a>
+        <div class="dropdown-menu">
+            <a href="Slideshow.html">PingMe</a>
+            <a href="Galleri.html">Galleri</a>
+            <a href="../../Uke_38_LacrosseOslo/index.html">Oslo Lacrosse</a>
+        </div>
+    </div>
+</nav>  
+            <img class="FargeGreie" src="Bilder/FargePalett.png" alt="">
+        </nav>
+    </header>
+    <!--Navbaren ender her, og jeg har brukt header for bedre oversikt-->
+    <main>
+        <!--Her starter tekst og bilde delen i "main" delen av siden. Har brukt en felles seksjon og forskellige headers og paragraf tagger istedet for bedre oversikt, og færre diver. -->
+        <section class="Tekst1">
+            <h2 class="Overskrift1">
+                Henry Ross
+            </h2>
+            <h1 class="Overskrift2"> Framtidlig Millionær
+            </h1>
+            <p"Faktatekst1"> Hei, jeg heter Henry. Jeg er 16år gammel og går på kuben vgs på IM-linjen. Jeg har
+                stor intresse for IT, downhillsykling og freeski. Som elev på IM-Linjen så har jeg lært mye om CSS, HTML og Figma.  </p>
+
+            <section class="LogoerF">
+
+                <img src="Bilder/Css_Logo1.png" alt="css logo">
+                <img src="Bilder/Html_Logo1.png" alt=" Html logo">
+                <img src="Bilder/Figma_Logo1.png" alt=" Figma Logo">
+                <img src="Bilder/Adobe_lightroom_logo.png" alt="Adobe lightroom logo">
+            </section>
+
+        </section>
+        <img class="Bilde1" src="Bilder/Bilde_a_meg.jpg" alt="">
+
+
+
+
+    </main>
+    <!--Her ender main delen med teksten og bildet.-->
+</body>
+<!-- ✅ SCRIPTET SOM BYTTER ROSA/LILLA TIL GRØNT -->
+<!--Dette er laget av AI-->
+<script>
+    const knapp = document.querySelector(".FargeGreie");
+    let greenMode = false;
+
+    knapp.addEventListener("click", () => {
+        if (!greenMode) {
+            document.documentElement.style.setProperty("--rosa", "#6aff8d");
+            document.documentElement.style.setProperty("--lilla", "#1f7a3a");
+        } else {
+            document.documentElement.style.setProperty("--rosa", "#BF67B1");
+            document.documentElement.style.setProperty("--lilla", "#902A7F");
+        }
+
+        greenMode = !greenMode;
+    });
+</script>
+
+
+</html>
