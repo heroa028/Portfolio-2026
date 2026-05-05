@@ -273,6 +273,21 @@ background-color: 0,0,0,0.5;
     z-index: 200;
     padding-top: 1.2vh;
 }
+.BilderGalleri{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.BilderGalleri img{
+    width: 30vw;
+    padding: 5vh;
+    padding-top: 10vh;
+    transition: transform 0.5s;
+}
+
+.BilderGalleri img:hover{
+    transform: translateY(-2vh);
+}
 
 .dropdown-menu a {
     display: block;
