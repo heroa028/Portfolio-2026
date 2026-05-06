@@ -128,13 +128,19 @@ h9{
     border-bottom: #1a1a1a solid;
     padding-bottom: 2vh;
     width: 40%;
-    margin: 0;
+    padding-left: 7vw;
 }
 .My_skills{
     font-size: 2vw;
     font-weight: bolder;
 }
-
+.Ferdigheter_Logo img{
+     transition: transform 0.3s ;
+    width: 20vw
+}
+.Ferdigheter_Logo img:hover{
+    transform: scale(1.2);
+}
 .main1{
     display: flex;
     justify-content: center;
